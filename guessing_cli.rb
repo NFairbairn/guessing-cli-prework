@@ -8,13 +8,22 @@ def run_guessing_game
       comp_guess = rand(1..6).to_s
       puts "Guess a number between 1 and 6."
       user_input = gets.chomp
-        if user_input != comp_guess
-          puts "The computer guessed #{comp_guess}"
-        elsif user_input == "exit"
-          puts "Goodbye"
-            break
-        else
-          puts "You guessed the correct number!"
-        end
+      case user_input
+      when "exit"
+        puts "Goodbye"
+        break
+      when comp_guess
+        puts "You guessed the correct number!"
+        
     end
+end
+
+
+if user_input != comp_guess
+  puts "The computer guessed #{comp_guess}"
+elsif user_input == "exit"
+  puts "Goodbye"
+    break
+else
+  puts
 end
