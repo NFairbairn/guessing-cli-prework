@@ -17,17 +17,7 @@ def run_guessing_game
       else
         puts "The computer guessed #{comp_guess}"
       end
-
-
     end
 end
 
 
-if user_input != comp_guess
-
-elsif user_input == "exit"
-  puts "Goodbye"
-    break
-else
-  puts
-end
