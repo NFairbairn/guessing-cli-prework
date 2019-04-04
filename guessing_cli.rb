@@ -14,7 +14,6 @@ def run_guessing_game
         when 'exit'
           puts "Goodbye!"
           break
-          #else works
         else
           puts "The computer guessed #{comp_guess}."
       end
