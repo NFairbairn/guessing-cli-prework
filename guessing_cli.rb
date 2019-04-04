@@ -7,7 +7,7 @@ def run_guessing_game
     while user_input
       comp_guess = rand(1..6).to_s
       puts "Guess a number between 1 and 6."
-      user_input = gets.chomp
+      user_input = gets.chomp.downcase
       case user_input
       when "exit"
         puts "Goodbye"
