@@ -4,10 +4,11 @@ require 'pry'
 
 def run_guessing_game
   user_input = " "
-  comp_guess = rand(1..6)
+  
     while user_input
+      comp_guess = rand(1..6)
       puts "Guess a number between 1 and 6."
-      user_input = gets.to_i
+      user_input = gets.chomp
         if user_input != comp_guess
           puts "The computer guessed #{comp_guess}"
         else
