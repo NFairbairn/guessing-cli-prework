@@ -14,7 +14,7 @@ def run_guessing_game
         break
       when comp_guess
         puts "You guessed the correct number!"
-        
+
     end
 end
 
