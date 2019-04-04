@@ -11,6 +11,7 @@ def run_guessing_game
       user_input = gets.chomp
         if user_input != comp_guess
           puts "The computer guessed #{comp_guess}"
+        elsif user_input == "exit"
         else
           puts "You guessed the correct number!"
         end
