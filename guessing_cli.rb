@@ -9,7 +9,6 @@ def run_guessing_game
       user_input = gets.downcase.chomp
       comp_guess = rand(1..6).to_s
       case user_input.chomp
-
         when comp_guess
           puts "You guessed the correct number!"
         when "exit"
