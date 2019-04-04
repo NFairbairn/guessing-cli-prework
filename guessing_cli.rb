@@ -1,6 +1,6 @@
 # Code your solution here!
 require 'pry'
-binding.pry
+
 
 def run_guessing_game
   user_input = " "
